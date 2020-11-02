@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  /* html{
+    font-family: 'Karla', sans-serif;
+  } */
+
+  a:active, a:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+  }
+
+  *:focus {outline:none}
+
+/* RESET ABOVE */
+
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --shadow: blue;
+    --card:#F3E7DD;
+    --border-color:#093824;
+    --btn-background:#C2A792;
+  }
+  
+body{
+    /* background-image: url("images/ricepaper_v3.png"); */
+    background-color: var(--main-bg-color);
+    font-family: 'Itim', cursive;
+    color: #413B89;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+}
+
+/* header */
+
+#header{
+    width:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding:10px;
+    margin:20px 20px 10px 20px;
+    /* border:solid; */
+}
+
+#btn-add-book{
+    margin: 10px;;
+}
+
+#app-title{
+    font-size: 50px;
+    margin:10px;
+}
+
+
+/* card */
+
+#card-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width:100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    margin:10px;
+    width:200px;
+    /* height: 200px; */
+    border:solid var(--border-color);
+    border-radius: 2%;
+    border-width: thin;
+    font-family: 'Indie Flower', cursive;
+    font-size: px;
+    background-color: var(--card);
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  /* Safari+Chrome */
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* Opera */
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  /* background-image: url("images/ricepaper_v3.png"); */
+
+}
+
+
+
+
+.detail{
+    text-transform: capitalize;
+    padding:8px;
+}
+
+
+
+ #form-container{
+    width:300px;
+    margin: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border:solid grey;
+    border-radius: 2%;
+    border-width: thin;
+    
+    
+
+}
+
+
+form{ 
+    display: table;    
+    width:300px; 
+    margin: 10px 0px 2px 15px;
+    padding:10px;
+    /* border:solid; */
+}
+p{
+     display: table-row;  
+     padding:px;
+}
+label{ 
+    display: table-cell;
+    padding:6px;
+}
+input {
+     display: table-cell;
+     
+ }
+
+#btn-submit{
+  width:20%;
+  margin: 0px 0px 12px 0px;
+
+
+}
+
+.btn-holder{
+    width: 100%;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.btn-card{
+    
+    background-color: var(--btn-background);
+    color: white;
+    /* margin-left: 128px;
+    margin-top: 30px; */
+    font-size: 12px;
+    border:none;
+
+}
+
+.btn-card:hover{
+    color: #413B89;
+}
+
+
+.read-yes{
+    background-color:#E4CAB4;
+}
